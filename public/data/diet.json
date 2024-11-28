@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Paleo",
+    "description": "Basada en alimentos que se supone que consumían los humanos en la era paleolítica.",
+    "characteristics": [
+      "Alimentos enteros y no procesados",
+      "Evita lácteos, granos y azúcares",
+      "Alto en proteínas y grasas saludables"
+    ],
+    "imageUrl": "./images/paleo.jpg",
+    "genericRecipes": [
+      "Ensalada de aguacate y pollo",
+      "Salmón a la parrilla con vegetales",
+      "Tacos de lechuga con carne molida"
+    ],
+    "premiumRecipes": [
+      "Pechuga de pollo rellena de espinacas y aguacate",
+      "Filete de res con salsa de hongos y puré de coliflor",
+      "Tartar de atún con aguacate y aceitunas"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Vegana",
+    "description": "Excluye todos los productos de origen animal.",
+    "characteristics": [
+      "Basada en plantas (frutas, verduras, granos, legumbres)",
+      "Alto en fibra y nutrientes vegetales",
+      "Baja en grasas saturadas"
+    ],
+    "imageUrl": "./images/vegana.jpg",
+    "genericRecipes": [
+      "Ensalada de garbanzos con pepino y tomate",
+      "Tacos de tempeh con salsa de aguacate",
+      "Bowl de quinoa con verduras asadas"
+    ],
+    "premiumRecipes": [
+      "Tofu a la parrilla con salsa de maní y arroz jazmín",
+      "Pizza vegana con base de coliflor y queso de anacardos",
+      "Curry de lentejas con espinacas y coco"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Vegetariana",
+    "description": "Excluye carne y pescado, pero incluye otros productos de origen animal como lácteos y huevos.",
+    "characteristics": [
+      "Consumo de vegetales y productos lácteos",
+      "Incluye fuentes de proteínas vegetales",
+      "Versión lacto-ovo puede incluir huevos y lácteos"
+    ],
+    "imageUrl": "./images/vegetariana.jpg",
+    "genericRecipes": [
+      "Ensalada de pasta con queso feta y aceitunas",
+      "Huevos revueltos con espinacas y champiñones",
+      "Wraps de vegetales con hummus"
+    ],
+    "premiumRecipes": [
+      "Lasaña de berenjena con ricotta y albahaca",
+      "Quiche de espinacas y champiñones con masa integral",
+      "Bowl de arroz integral con tofu y salsa de sésamo"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Cetogénica",
+    "description": "Alta en grasas y baja en carbohidratos para inducir cetosis.",
+    "characteristics": [
+      "Alto en grasas saludables",
+      "Moderado en proteínas",
+      "Muy bajo en carbohidratos"
+    ],
+    "imageUrl": "./images/ceto.jpg",
+    "genericRecipes": [
+      "Ensalada de aguacate con pollo",
+      "Berenjenas rellenas de carne molida",
+      "Revuelto de huevos con espinacas y queso"
+    ],
+    "premiumRecipes": [
+      "Salmón con mantequilla de ajo y espárragos",
+      "Pizza cetogénica con base de coliflor y queso mozzarella",
+      "Tarta de limón sin azúcar con crema de coco"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mediterránea",
+    "description": "Basada en la alimentación tradicional de los países del Mediterráneo.",
+    "characteristics": [
+      "Alta en frutas, verduras y grasas saludables",
+      "Consumo moderado de pescado y aves",
+      "Bajo en carnes rojas y procesadas"
+    ],
+    "imageUrl": "./images/medi.jpg",
+    "genericRecipes": [
+      "Ensalada griega con tomate, pepino y feta",
+      "Pescado al horno con hierbas y aceite de oliva",
+      "Hummus con pan pita integral"
+    ],
+    "premiumRecipes": [
+      "Paella mediterránea con mariscos y arroz integral",
+      "Lomos de atún a la parrilla con salsa de aceitunas",
+      "Cordero al horno con hierbas y ensalada de rúcula"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Sin gluten",
+    "description": "Evita el gluten, una proteína presente en el trigo, cebada y centeno.",
+    "characteristics": [
+      "Evita trigo, cebada y centeno",
+      "Basada en alimentos naturalmente sin gluten",
+      "Adecuada para personas con intolerancia al gluten o celiaquía"
+    ],
+    "imageUrl": "./images/sgluten.jpg",
+    "genericRecipes": [
+      "Ensalada de quinoa con aguacate",
+      "Tortillas de maíz con pollo a la parrilla",
+      "Sopa de lentejas y zanahorias"
+    ],
+    "premiumRecipes": [
+      "Galletas de avena sin gluten y almendras",
+      "Pizza sin gluten con base de arroz y tomate fresco",
+      "Panqueques de avena con miel y frutas"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "DASH",
+    "description": "Enfocada en la reducción de la presión arterial, baja en sodio.",
+    "characteristics": [
+      "Baja en sal",
+      "Alta en frutas y verduras",
+      "Moderado en productos lácteos bajos en grasa"
+    ],
+    "imageUrl": "./images/dash.jpg",
+    "genericRecipes": [
+      "Ensalada de espinacas con nueces y manzana",
+      "Pollo a la parrilla con vegetales asados",
+      "Arroz integral con garbanzos"
+    ],
+    "premiumRecipes": [
+      "Salmón al vapor con espárragos y cebollas caramelizadas",
+      "Bowl de yogur con frutas frescas y granola sin azúcar",
+      "Tacos de pollo con aguacate y salsa de yogur"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Ayuno intermitente",
+    "description": "Ciclos de ayuno y alimentación, enfocado en el momento de comer en lugar de los tipos de alimentos.",
+    "characteristics": [
+      "Ayuno en intervalos de tiempo (16/8, 24 horas, etc.)",
+      "Enfoque en cuándo comer, no en qué comer",
+      "Puede combinarse con otras dietas"
+    ],
+    "imageUrl": "./images/interm.jpg",
+    "genericRecipes": [
+      "Ensalada de atún con pepino y pimientos",
+      "Huevos revueltos con tomate y cebolla",
+      "Bowl de frutas y semillas"
+    ],
+    "premiumRecipes": [
+      "Bowl de aguacate, pollo y huevo duro",
+      "Ensalada de pollo a la parrilla con vinagreta de mostaza",
+      "Sopa de calabaza con cúrcuma y jengibre"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "FODMAP baja",
+    "description": "Dieta para reducir los alimentos ricos en FODMAPs, que pueden causar problemas digestivos.",
+    "characteristics": [
+      "Evita alimentos ricos en FODMAPs",
+      "Alta en vegetales bajos en FODMAPs",
+      "Útil para personas con síndrome de intestino irritable (SII)"
+    ],
+    "imageUrl": "./images/fodmap.jpg",
+    "genericRecipes": [
+      "Ensalada de pepino y zanahoria",
+      "Pechuga de pollo con arroz integral",
+      "Sopa de zanahorias y calabacines"
+    ],
+    "premiumRecipes": [
+      "Tacos de pescado con col y salsa sin gluten",
+      "Galletas de avena sin gluten y plátano",
+      "Salmón al horno con zanahorias y calabacines"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Alta en proteínas",
+    "description": "Dieta enfocada en aumentar el consumo de proteínas, común para el desarrollo muscular.",
+    "characteristics": [
+      "Alto en carnes magras, pescado y proteínas vegetales",
+      "Modera carbohidratos y grasas",
+      "Ideal para deportistas y desarrollo muscular"
+    ],
+    "imageUrl": "./images/aproteina.jpg",
+    "genericRecipes": [
+      "Ensalada de pollo con aguacate y tomate",
+      "Tazón de quinoa con garbanzos y espinacas",
+      "Tacos de carne magra con ensalada"
+    ],
+    "premiumRecipes": [
+      "Salmón a la parrilla con ensalada de quinoa",
+      "Pollo a la plancha con salsa de mostaza y espárragos",
+      "Tostadas de aguacate con huevo y espinacas"
+    ]
+  }
+]
