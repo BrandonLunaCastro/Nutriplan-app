@@ -1,0 +1,115 @@
+{
+    "dietas": [
+      {
+        "id": 1,
+        "name": "Paleo",
+        "objetivos": [
+          "Mejorar la salud digestiva",
+          "Aumentar la energía",
+          "Perder peso de manera saludable",
+          "Eliminar alimentos procesados",
+          "Fortalecer el sistema inmunológico"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Vegana",
+        "objetivos": [
+          "Reducir el impacto ambiental",
+          "Promover la salud cardiovascular",
+          "Mejorar la digestión",
+          "Aumentar la ingesta de fibra",
+          "Eliminar productos de origen animal"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Ceto",
+        "objetivos": [
+          "Inducir la cetosis para quemar grasa",
+          "Reducir la grasa corporal",
+          "Aumentar la energía mental y física",
+          "Mejorar el control del azúcar en la sangre",
+          "Desarrollar músculo mientras se quema grasa"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Mediterránea",
+        "objetivos": [
+          "Mejorar la salud cardiovascular",
+          "Aumentar la longevidad",
+          "Controlar el peso corporal",
+          "Reducir el riesgo de enfermedades crónicas",
+          "Promover una dieta balanceada y rica en nutrientes"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Intermitente",
+        "objetivos": [
+          "Mejorar la resistencia a la insulina",
+          "Ayudar a reducir la grasa corporal",
+          "Controlar el apetito y el hambre",
+          "Mejorar la concentración y energía",
+          "Promover el autofagicismo celular"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "DASH",
+        "objetivos": [
+          "Reducir la presión arterial",
+          "Mejorar la salud ósea",
+          "Promover una dieta baja en sodio",
+          "Reducir el riesgo de enfermedades cardíacas",
+          "Mejorar el control de peso"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Flexitariana",
+        "objetivos": [
+          "Mejorar la salud general con enfoque en plantas",
+          "Reducir la ingesta de carne sin eliminarla completamente",
+          "Promover la sostenibilidad",
+          "Mejorar la salud digestiva",
+          "Controlar el peso corporal"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Low Carb",
+        "objetivos": [
+          "Reducir la ingesta de carbohidratos refinados",
+          "Promover la pérdida de peso",
+          "Controlar el azúcar en la sangre",
+          "Mejorar el rendimiento físico",
+          "Aumentar la quema de grasa"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Whole30",
+        "objetivos": [
+          "Eliminar alimentos procesados y azúcares añadidos",
+          "Mejorar la salud digestiva",
+          "Aumentar la energía",
+          "Identificar intolerancias alimentarias",
+          "Mejorar la relación con la comida"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Plant-Based",
+        "objetivos": [
+          "Mejorar la salud cardiovascular",
+          "Reducir la inflamación",
+          "Promover la salud digestiva",
+          "Aumentar la energía",
+          "Reducir el riesgo de enfermedades crónicas"
+        ]
+      }
+    ]
+  }
+  

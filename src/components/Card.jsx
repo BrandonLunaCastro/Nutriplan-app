@@ -2,8 +2,6 @@ import React, { useContext } from 'react';
 import { UserContext } from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-//import 'react-slideshow-image/dist/styles.css';
-
 
 function Card({ info }) {
     const { name, characteristics, description, imageUrl } = info;
@@ -21,30 +19,29 @@ function Card({ info }) {
         }
     };
 
-
-
-
-
     return (
-        <div className="relative m-2">
+        <div className="relative m-4 w-72 h-96 rounded-lg overflow-hidden shadow-lg">
             <figure
-                className="bg-cover bg-center rounded-lg overflow-hidden"
-                style={{ backgroundImage: `url(${imageUrl})`, height: '800px', width: '300px' }}
+                className="bg-cover bg-center w-full h-full"
+                style={{ backgroundImage: `url(${imageUrl})` }}
             >
-                <div className="absolute inset-0 bg-black bg-opacity-50 rounded-md" />
+                {/* Overlay oscuro para el texto */}
+                <div className="absolute inset-0 bg-black bg-opacity-50" />
+                
+                {/* Contenido de la tarjeta */}
                 <div className="relative p-4 flex flex-col justify-end h-full z-10">
-                    <h2 className="text-2xl font-bold text-white">{name}</h2>
-                    <p className="text-lg font-semibold text-white mt-1">{description}</p>
-                    <ul className="text-gray-300 mt-2">
+                    <h2 className="text-xl font-bold text-white mb-2">{name}</h2>
+                    <p className="text-sm text-gray-300">{description}</p>
+                    <ul className="mt-2 space-y-1 text-gray-400">
                         {characteristics.map((el, index) => (
                             <li key={index} className="text-sm">{el}</li>
                         ))}
                     </ul>
                     <button
-                        className="mt-4 bg-soft-green text-white rounded py-2 hover:bg-bold-green transition duration-200 ease-in-out shadow-lg"
+                        className="mt-4 bg-green-500 text-white rounded py-2 px-4 hover:bg-green-600 transition duration-200 ease-in-out shadow-lg"
                         onClick={() => userClicked(name)}
                     >
-                        Select
+                        Seleccionar
                     </button>
                 </div>
             </figure>
@@ -53,5 +50,3 @@ function Card({ info }) {
 }
 
 export default Card;
-
-

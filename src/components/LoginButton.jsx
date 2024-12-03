@@ -4,18 +4,10 @@ import { useEffect } from 'react';
 
 function LoginButton() {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
-  const navigate = useNavigate();
-
+  
   const handleLogin = async () => {
     await loginWithRedirect();
   };
-
-/*   useEffect(() => {
-    if (isAuthenticated) {
-      navigate('/Login'); // Redirige a LoginScreen después de iniciar sesión
-    }
-  }, [isAuthenticated, navigate]);
- */
 
   return (
     <button

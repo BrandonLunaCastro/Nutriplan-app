@@ -7,6 +7,11 @@
 @fullcalendar/timegrid/main.css;
 @fullcalendar/list/main.css;
 @import "react-slideshow-image/dist/styles.css";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .custom-slideshow .react-slideshow-container + .indicators {
     bottom: -20px; /* Ajusta la posición de los indicadores */

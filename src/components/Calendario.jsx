@@ -2,26 +2,27 @@ import React, { useContext, useEffect, useState } from 'react';
 import Modal from 'react-modal';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
-import interactionPlugin from '@fullcalendar/interaction'; // Importar el plugin de interacción
+import interactionPlugin from '@fullcalendar/interaction';
 import { fetchDiet } from '../functions/fetchDiet';
 import { UserContext } from '../context/UserContext';
 
-Modal.setAppElement('#root'); // Para accesibilidad
+Modal.setAppElement('#root');
 
-function Calendario({ events, addEvent }) { // Recibe eventos y función para agregar eventos como props
+function Calendario({ events, addEvent, removeEvent, setActualDiet }) {
     const { value } = useContext(UserContext);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedDate, setSelectedDate] = useState(null);
     const [allDiet, setDiet] = useState(null);
-    const [actualDiet, setActualDiet] = useState(null);
+    const [actualDiet, setLocalActualDiet] = useState(null);
+    const [selectedRecipe, setSelectedRecipe] = useState(null);
+    const { userData } = value;
 
-    // Cargar la información de las dietas
     useEffect(() => {
         const loadData = async () => {
             try {
                 const info = await fetchDiet();
                 setDiet(info);
-                console.log('Dieta cargada:', info); // Verificar que la dieta se carga correctamente
+                console.log('Dieta cargada:', info);
             } catch (error) {
                 console.error('Error loading diet data:', error);
             }
@@ -30,56 +31,74 @@ function Calendario({ events, addEvent }) { // Recibe eventos y función para ag
         loadData();
     }, []);
 
-    // Filtrar las recetas según el plan seleccionado por el usuario
     useEffect(() => {
         if (allDiet) {
             const selectedPlan = value.userData.selectedPlan;
             const selectedDiet = allDiet.find(diet => diet.name === selectedPlan);
 
             if (selectedDiet) {
-                setActualDiet(selectedDiet); // Establece las recetas de este plan
-                console.log('Dieta seleccionada:', selectedDiet); // Verificar la dieta seleccionada
+                setLocalActualDiet(selectedDiet);
+                setActualDiet(selectedDiet); // Enviar dieta actualizada al componente padre
+                console.log('Dieta seleccionada:', selectedDiet);
             }
         }
     }, [allDiet, value.userData.selectedPlan]);
 
-    // Función para abrir el modal al seleccionar una fecha
     const handleDateSelect = (info) => {
-        console.log('Fecha seleccionada:', info.startStr); // Verificar que se selecciona una fecha
+        console.log('Fecha seleccionada:', info.startStr);
         setSelectedDate(info.startStr);
-        setIsModalOpen(true); // Abrir el modal
+        setIsModalOpen(true);
     };
 
-    // Cerrar el modal
+    const handleEventClick = (info) => {
+        const eventId = info.event.id;
+        removeEvent(eventId);
+    };
+
     const closeModal = () => {
         setIsModalOpen(false);
     };
 
-    // Función para seleccionar la receta
     const handleRecipeSelect = (recipe) => {
         const newEvent = {
-            title: recipe,  // Título del evento (nombre de la receta)
-            start: selectedDate,   // Fecha seleccionada
+            id: `${selectedDate}-${recipe.name}`,
+            title: recipe.name,
+            start: selectedDate,
+            ingredients: recipe.ingredients
         };
-
-        // Agregar evento al estado
-        addEvent(newEvent); // Usar la función pasada como prop para agregar el evento
+        addEvent(newEvent);
         console.log('Evento añadido:', newEvent);
-        setIsModalOpen(false); // Cerrar el modal después de seleccionar la receta
+        setIsModalOpen(false);
     };
 
     return (
         <div>
-            {/* Calendario */}
             <FullCalendar
-                plugins={[dayGridPlugin, interactionPlugin]} // Añadir el plugin de interacción
+                plugins={[dayGridPlugin, interactionPlugin]}
                 initialView="dayGridMonth"
-                events={events}  // Mostrar los eventos en el calendario
-                selectable={true}  // Permitir selección de fechas
-                select={handleDateSelect}  // Acción al seleccionar una fecha
+                events={events}
+                selectable={true}
+                select={handleDateSelect}
+                eventClick={handleEventClick}
+                height="auto"
+                headerToolbar={{
+                    start: 'prev,next today',
+                    center: 'title',
+                    end: 'dayGridMonth,timeGridWeek,timeGridDay'
+                }}
+                buttonText={{
+                    today: 'Hoy',
+                    month: 'Mes',
+                    week: 'Semana',
+                    day: 'Día'
+                }}
+                eventDisplay="block"
+                contentHeight="auto"
+                themeSystem="bootstrap"
+                eventTextColor="#000000"
+                dayMaxEventRows={2}
             />
 
-            {/* Modal para seleccionar la receta */}
             <Modal
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}
@@ -91,51 +110,62 @@ function Calendario({ events, addEvent }) { // Recibe eventos y función para ag
                         bottom: 'auto',
                         marginRight: '-50%',
                         transform: 'translate(-50%, -50%)',
-                        width: '80%',
-                        maxWidth: '400px',
-                        padding: '20px',
+                        width: '90%',
+                        maxWidth: '300px',
+                        padding: '10px',
                         borderRadius: '10px',
                         backgroundColor: '#ffffff',
-                        zIndex: '1000', // Asegurarse de que el modal esté sobre el calendario
+                        zIndex: '1000',
                     },
                     overlay: {
-                        backgroundColor: 'rgba(0, 0, 0, 0.75)', // Aumentar la opacidad para un efecto más fuerte
-                        zIndex: '1000', // Asegurarse de que la superposición esté sobre el calendario
+                        backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                        zIndex: '1000',
                     },
                 }}
             >
-                <h2 className="text-xl font-bold">Selecciona una receta para el {selectedDate}</h2>
-                <div className="mt-4">
-                    {actualDiet ? (
+                <h2 className="text-lg font-bold">Selecciona una receta para el {selectedDate}</h2>
+                <div className="mt-2">
+                    {(actualDiet && userData.isPremium) ? 
                         <>
-                            <h3>Recetas generales:</h3>
+                            <h3>Recetas:</h3>
                             {actualDiet.genericRecipes.map((recipe, index) => (
                                 <button
                                     key={index}
                                     onClick={() => handleRecipeSelect(recipe)}
-                                    className="block w-full py-2 px-4 mb-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+                                    className="block w-full py-1 px-2 mb-1 text-white bg-blue-500 rounded hover:bg-blue-600"
                                 >
-                                    {recipe}
+                                    {recipe.name}
                                 </button>
                             ))}
-                            <h3 className="mt-4">Recetas premium:</h3>
+                            <h3 className="mt-2">Recetas premium:</h3>
                             {actualDiet.premiumRecipes.map((recipe, index) => (
                                 <button
                                     key={index}
                                     onClick={() => handleRecipeSelect(recipe)}
-                                    className="block w-full py-2 px-4 mb-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+                                    className="block w-full py-1 px-2 mb-1 text-white bg-blue-500 rounded hover:bg-blue-600"
                                 >
-                                    {recipe}
+                                    {recipe.name}
                                 </button>
                             ))}
                         </>
-                    ) : (
-                        <p>No hay recetas disponibles para este plan.</p>
-                    )}
+                    : (actualDiet && !userData.isPremium) && 
+                        <>
+                            <h3>Recetas:</h3>
+                            {actualDiet.genericRecipes.map((recipe, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => handleRecipeSelect(recipe)}
+                                    className="block w-full py-1 px-2 mb-1 text-white bg-blue-500 rounded hover:bg-blue-600"
+                                >
+                                    {recipe.name}
+                                </button>
+                            ))}
+                        </>
+                    }
                 </div>
                 <button
                     onClick={closeModal}
-                    className="mt-4 py-2 px-4 bg-gray-500 text-white rounded"
+                    className="mt-2 py-1 px-2 bg-gray-500 text-white rounded"
                 >
                     Cerrar
                 </button>
@@ -145,3 +175,4 @@ function Calendario({ events, addEvent }) { // Recibe eventos y función para ag
 }
 
 export default Calendario;
+

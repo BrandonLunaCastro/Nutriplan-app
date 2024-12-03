@@ -10,14 +10,74 @@
     ],
     "imageUrl": "./images/paleo.jpg",
     "genericRecipes": [
-      "Ensalada de aguacate y pollo",
-      "Salmón a la parrilla con vegetales",
-      "Tacos de lechuga con carne molida"
+      {
+        "name": "Ensalada de aguacate y pollo",
+        "ingredients": [
+          "Pechuga de pollo",
+          "Aguacate",
+          "Tomate",
+          "Lechuga",
+          "Aceite de oliva",
+          "Limón"
+        ]
+      },
+      {
+        "name": "Salmón a la parrilla con vegetales",
+        "ingredients": [
+          "Salmón",
+          "Espárragos",
+          "Pimientos",
+          "Aceite de oliva",
+          "Limón",
+          "Sal y pimienta"
+        ]
+      },
+      {
+        "name": "Tacos de lechuga con carne molida",
+        "ingredients": [
+          "Carne molida",
+          "Hojas de lechuga",
+          "Tomate",
+          "Cebolla",
+          "Aguacate",
+          "Limón"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Pechuga de pollo rellena de espinacas y aguacate",
-      "Filete de res con salsa de hongos y puré de coliflor",
-      "Tartar de atún con aguacate y aceitunas"
+      {
+        "name": "Pechuga de pollo rellena de espinacas y aguacate",
+        "ingredients": [
+          "Pechuga de pollo",
+          "Espinacas",
+          "Aguacate",
+          "Aceite de oliva",
+          "Ajo",
+          "Limón"
+        ]
+      },
+      {
+        "name": "Filete de res con salsa de hongos y puré de coliflor",
+        "ingredients": [
+          "Filete de res",
+          "Hongos",
+          "Coliflor",
+          "Leche de almendras",
+          "Aceite de oliva",
+          "Sal y pimienta"
+        ]
+      },
+      {
+        "name": "Tartar de atún con aguacate y aceitunas",
+        "ingredients": [
+          "Atún fresco",
+          "Aguacate",
+          "Aceitunas",
+          "Cebolla roja",
+          "Aceite de oliva",
+          "Limón"
+        ]
+      }
     ]
   },
   {
@@ -31,14 +91,73 @@
     ],
     "imageUrl": "./images/vegana.jpg",
     "genericRecipes": [
-      "Ensalada de garbanzos con pepino y tomate",
-      "Tacos de tempeh con salsa de aguacate",
-      "Bowl de quinoa con verduras asadas"
+      {
+        "name": "Ensalada de garbanzos con pepino y tomate",
+        "ingredients": [
+          "Garbanzos",
+          "Pepino",
+          "Tomate",
+          "Aceite de oliva",
+          "Limón",
+          "Sal y pimienta"
+        ]
+      },
+      {
+        "name": "Tacos de tempeh con salsa de aguacate",
+        "ingredients": [
+          "Tempeh",
+          "Tortillas de maíz",
+          "Aguacate",
+          "Cebolla",
+          "Cilantro",
+          "Limón"
+        ]
+      },
+      {
+        "name": "Bowl de quinoa con verduras asadas",
+        "ingredients": [
+          "Quinoa",
+          "Zanahorias",
+          "Pimientos",
+          "Brócoli",
+          "Aceite de oliva",
+          "Sal y pimienta"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Tofu a la parrilla con salsa de maní y arroz jazmín",
-      "Pizza vegana con base de coliflor y queso de anacardos",
-      "Curry de lentejas con espinacas y coco"
+      {
+        "name": "Tofu a la parrilla con salsa de maní y arroz jazmín",
+        "ingredients": [
+          "Tofu",
+          "Arroz jazmín",
+          "Mantequilla de maní",
+          "Salsa de soja",
+          "Ajo",
+          "Aceite de oliva"
+        ]
+      },
+      {
+        "name": "Pizza vegana con base de coliflor y queso de anacardos",
+        "ingredients": [
+          "Coliflor",
+          "Harina de almendra",
+          "Queso de anacardos",
+          "Tomate",
+          "Albahaca"
+        ]
+      },
+      {
+        "name": "Curry de lentejas con espinacas y coco",
+        "ingredients": [
+          "Lentejas",
+          "Espinacas",
+          "Leche de coco",
+          "Ajo",
+          "Cebolla",
+          "Curry en polvo"
+        ]
+      }
     ]
   },
   {
@@ -52,14 +171,70 @@
     ],
     "imageUrl": "./images/vegetariana.jpg",
     "genericRecipes": [
-      "Ensalada de pasta con queso feta y aceitunas",
-      "Huevos revueltos con espinacas y champiñones",
-      "Wraps de vegetales con hummus"
+      {
+        "name": "Ensalada de pasta con queso feta y aceitunas",
+        "ingredients": [
+          "Pasta integral",
+          "Queso feta",
+          "Aceitunas",
+          "Tomate",
+          "Aceite de oliva",
+          "Albahaca"
+        ]
+      },
+      {
+        "name": "Huevos revueltos con espinacas y champiñones",
+        "ingredients": [
+          "Huevos",
+          "Espinacas",
+          "Champiñones",
+          "Aceite de oliva",
+          "Sal y pimienta"
+        ]
+      },
+      {
+        "name": "Wraps de vegetales con hummus",
+        "ingredients": [
+          "Tortillas integrales",
+          "Hummus",
+          "Pepino",
+          "Zanahoria",
+          "Lechuga"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Lasaña de berenjena con ricotta y albahaca",
-      "Quiche de espinacas y champiñones con masa integral",
-      "Bowl de arroz integral con tofu y salsa de sésamo"
+      {
+        "name": "Lasaña de berenjena con ricotta y albahaca",
+        "ingredients": [
+          "Berenjenas",
+          "Ricotta",
+          "Albahaca",
+          "Tomate",
+          "Aceite de oliva"
+        ]
+      },
+      {
+        "name": "Quiche de espinacas y champiñones con masa integral",
+        "ingredients": [
+          "Espinacas",
+          "Champiñones",
+          "Huevos",
+          "Leche",
+          "Masa integral",
+          "Queso rallado"
+        ]
+      },
+      {
+        "name": "Bowl de arroz integral con tofu y salsa de sésamo",
+        "ingredients": [
+          "Arroz integral",
+          "Tofu",
+          "Salsa de soja",
+          "Aceite de sésamo",
+          "Semillas de sésamo"
+        ]
+      }
     ]
   },
   {
@@ -73,14 +248,69 @@
     ],
     "imageUrl": "./images/ceto.jpg",
     "genericRecipes": [
-      "Ensalada de aguacate con pollo",
-      "Berenjenas rellenas de carne molida",
-      "Revuelto de huevos con espinacas y queso"
+      {
+        "name": "Ensalada de aguacate con pollo",
+        "ingredients": [
+          "Aguacate",
+          "Pechuga de pollo",
+          "Tomate",
+          "Lechuga",
+          "Aceite de oliva",
+          "Limón"
+        ]
+      },
+      {
+        "name": "Berenjenas rellenas de carne molida",
+        "ingredients": [
+          "Berenjenas",
+          "Carne molida",
+          "Queso rallado",
+          "Aceite de oliva",
+          "Ajo",
+          "Pimiento"
+        ]
+      },
+      {
+        "name": "Revuelto de huevos con espinacas y queso",
+        "ingredients": [
+          "Huevos",
+          "Espinacas",
+          "Queso cheddar",
+          "Aceite de oliva",
+          "Sal y pimienta"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Salmón con mantequilla de ajo y espárragos",
-      "Pizza cetogénica con base de coliflor y queso mozzarella",
-      "Tarta de limón sin azúcar con crema de coco"
+      {
+        "name": "Salmón con mantequilla de ajo y espárragos",
+        "ingredients": [
+          "Salmón",
+          "Mantequilla",
+          "Ajo",
+          "Espárragos",
+          "Limón"
+        ]
+      },
+      {
+        "name": "Pizza cetogénica con base de coliflor y queso mozzarella",
+        "ingredients": [
+          "Coliflor",
+          "Queso mozzarella",
+          "Tomate",
+          "Albahaca",
+          "Aceite de oliva"
+        ]
+      },
+      {
+        "name": "Tarta de limón sin azúcar con crema de coco",
+        "ingredients": [
+          "Harina de almendra",
+          "Leche de coco",
+          "Limón",
+          "Endulzante sin azúcar"
+        ]
+      }
     ]
   },
   {
@@ -88,20 +318,76 @@
     "name": "Mediterránea",
     "description": "Basada en la alimentación tradicional de los países del Mediterráneo.",
     "characteristics": [
-      "Alta en frutas, verduras y grasas saludables",
-      "Consumo moderado de pescado y aves",
-      "Bajo en carnes rojas y procesadas"
+      "Enfoque en aceite de oliva, pescados y vegetales",
+      "Granos enteros y legumbres",
+      "Bajo en carnes rojas"
     ],
-    "imageUrl": "./images/medi.jpg",
+    "imageUrl": "./images/mediterranea.jpg",
     "genericRecipes": [
-      "Ensalada griega con tomate, pepino y feta",
-      "Pescado al horno con hierbas y aceite de oliva",
-      "Hummus con pan pita integral"
+      {
+        "name": "Ensalada griega",
+        "ingredients": [
+          "Tomate",
+          "Pepino",
+          "Aceitunas",
+          "Queso feta",
+          "Aceite de oliva",
+          "Albahaca"
+        ]
+      },
+      {
+        "name": "Pasta con tomate y albahaca",
+        "ingredients": [
+          "Pasta integral",
+          "Tomate",
+          "Albahaca",
+          "Aceite de oliva",
+          "Ajo"
+        ]
+      },
+      {
+        "name": "Sopa de lentejas con espinacas",
+        "ingredients": [
+          "Lentejas",
+          "Espinacas",
+          "Cebolla",
+          "Ajo",
+          "Aceite de oliva"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Paella mediterránea con mariscos y arroz integral",
-      "Lomos de atún a la parrilla con salsa de aceitunas",
-      "Cordero al horno con hierbas y ensalada de rúcula"
+      {
+        "name": "Paella de mariscos",
+        "ingredients": [
+          "Arroz",
+          "Mariscos",
+          "Tomate",
+          "Pimiento",
+          "Azafrán",
+          "Aceite de oliva"
+        ]
+      },
+      {
+        "name": "Salmón al horno con limón y ajo",
+        "ingredients": [
+          "Salmón",
+          "Limón",
+          "Ajo",
+          "Aceite de oliva",
+          "Perejil"
+        ]
+      },
+      {
+        "name": "Pizza de verduras con masa integral",
+        "ingredients": [
+          "Pasta integral",
+          "Pimientos",
+          "Aceitunas",
+          "Tomate",
+          "Mozzarella"
+        ]
+      }
     ]
   },
   {
@@ -115,14 +401,69 @@
     ],
     "imageUrl": "./images/sgluten.jpg",
     "genericRecipes": [
-      "Ensalada de quinoa con aguacate",
-      "Tortillas de maíz con pollo a la parrilla",
-      "Sopa de lentejas y zanahorias"
+      {
+        "name": "Ensalada de quinoa con aguacate",
+        "ingredients": [
+          "Quinoa",
+          "Aguacate",
+          "Tomate",
+          "Cebolla morada",
+          "Aceite de oliva",
+          "Limón"
+        ]
+      },
+      {
+        "name": "Tortillas de maíz con pollo a la parrilla",
+        "ingredients": [
+          "Tortillas de maíz",
+          "Pechuga de pollo",
+          "Aguacate",
+          "Cilantro",
+          "Salsa de tomate natural"
+        ]
+      },
+      {
+        "name": "Sopa de lentejas y zanahorias",
+        "ingredients": [
+          "Lentejas",
+          "Zanahorias",
+          "Cebolla",
+          "Ajo",
+          "Caldo de verduras"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Galletas de avena sin gluten y almendras",
-      "Pizza sin gluten con base de arroz y tomate fresco",
-      "Panqueques de avena con miel y frutas"
+      {
+        "name": "Galletas de avena sin gluten y almendras",
+        "ingredients": [
+          "Avena sin gluten",
+          "Harina de almendra",
+          "Miel",
+          "Huevos",
+          "Chispas de chocolate"
+        ]
+      },
+      {
+        "name": "Pizza sin gluten con base de arroz y tomate fresco",
+        "ingredients": [
+          "Arroz cocido",
+          "Queso mozzarella",
+          "Tomate",
+          "Albahaca",
+          "Aceite de oliva"
+        ]
+      },
+      {
+        "name": "Panqueques de avena con miel y frutas",
+        "ingredients": [
+          "Avena sin gluten",
+          "Leche de almendra",
+          "Huevos",
+          "Miel",
+          "Frutas frescas (como plátano o fresas)"
+        ]
+      }
     ]
   },
   {
@@ -136,14 +477,67 @@
     ],
     "imageUrl": "./images/dash.jpg",
     "genericRecipes": [
-      "Ensalada de espinacas con nueces y manzana",
-      "Pollo a la parrilla con vegetales asados",
-      "Arroz integral con garbanzos"
+      {
+        "name": "Ensalada de espinacas con nueces y manzana",
+        "ingredients": [
+          "Espinacas",
+          "Manzana",
+          "Nueces",
+          "Aceite de oliva",
+          "Vinagre balsámico"
+        ]
+      },
+      {
+        "name": "Pollo a la parrilla con vegetales asados",
+        "ingredients": [
+          "Pechuga de pollo",
+          "Calabacín",
+          "Pimientos",
+          "Aceite de oliva",
+          "Especias (ajo en polvo, pimienta)"
+        ]
+      },
+      {
+        "name": "Arroz integral con garbanzos",
+        "ingredients": [
+          "Arroz integral",
+          "Garbanzos",
+          "Cebolla",
+          "Ajo",
+          "Caldo de verduras"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Salmón al vapor con espárragos y cebollas caramelizadas",
-      "Bowl de yogur con frutas frescas y granola sin azúcar",
-      "Tacos de pollo con aguacate y salsa de yogur"
+      {
+        "name": "Salmón al vapor con espárragos y cebollas caramelizadas",
+        "ingredients": [
+          "Salmón",
+          "Espárragos",
+          "Cebolla",
+          "Aceite de oliva",
+          "Miel"
+        ]
+      },
+      {
+        "name": "Bowl de yogur con frutas frescas y granola sin azúcar",
+        "ingredients": [
+          "Yogur natural bajo en grasa",
+          "Frutas frescas (como arándanos y fresas)",
+          "Granola sin azúcar",
+          "Miel"
+        ]
+      },
+      {
+        "name": "Tacos de pollo con aguacate y salsa de yogur",
+        "ingredients": [
+          "Pechuga de pollo",
+          "Tortillas integrales",
+          "Aguacate",
+          "Yogur natural",
+          "Cilantro"
+        ]
+      }
     ]
   },
   {
@@ -157,14 +551,67 @@
     ],
     "imageUrl": "./images/interm.jpg",
     "genericRecipes": [
-      "Ensalada de atún con pepino y pimientos",
-      "Huevos revueltos con tomate y cebolla",
-      "Bowl de frutas y semillas"
+      {
+        "name": "Ensalada de atún con pepino y pimientos",
+        "ingredients": [
+          "Atún",
+          "Pepino",
+          "Pimientos rojos",
+          "Aceite de oliva",
+          "Limón"
+        ]
+      },
+      {
+        "name": "Huevos revueltos con tomate y cebolla",
+        "ingredients": [
+          "Huevos",
+          "Tomate",
+          "Cebolla",
+          "Aceite de oliva",
+          "Sal y pimienta"
+        ]
+      },
+      {
+        "name": "Bowl de frutas y semillas",
+        "ingredients": [
+          "Frutas frescas (como plátano y fresas)",
+          "Semillas de chía",
+          "Yogur natural",
+          "Miel"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Bowl de aguacate, pollo y huevo duro",
-      "Ensalada de pollo a la parrilla con vinagreta de mostaza",
-      "Sopa de calabaza con cúrcuma y jengibre"
+      {
+        "name": "Bowl de aguacate, pollo y huevo duro",
+        "ingredients": [
+          "Aguacate",
+          "Pechuga de pollo",
+          "Huevo duro",
+          "Espinacas",
+          "Aceite de oliva"
+        ]
+      },
+      {
+        "name": "Ensalada de pollo a la parrilla con vinagreta de mostaza",
+        "ingredients": [
+          "Pechuga de pollo",
+          "Lechuga",
+          "Tomate cherry",
+          "Vinagre de manzana",
+          "Mostaza Dijon"
+        ]
+      },
+      {
+        "name": "Sopa de calabaza con cúrcuma y jengibre",
+        "ingredients": [
+          "Calabaza",
+          "Cúrcuma",
+          "Jengibre",
+          "Caldo de verduras",
+          "Aceite de oliva"
+        ]
+      }
     ]
   },
   {
@@ -178,14 +625,67 @@
     ],
     "imageUrl": "./images/fodmap.jpg",
     "genericRecipes": [
-      "Ensalada de pepino y zanahoria",
-      "Pechuga de pollo con arroz integral",
-      "Sopa de zanahorias y calabacines"
+      {
+        "name": "Ensalada de pepino y zanahoria",
+        "ingredients": [
+          "Pepino",
+          "Zanahoria",
+          "Aceite de oliva",
+          "Limón",
+          "Eneldo"
+        ]
+      },
+      {
+        "name": "Pechuga de pollo con arroz integral",
+        "ingredients": [
+          "Pechuga de pollo",
+          "Arroz integral",
+          "Aceite de oliva",
+          "Sal",
+          "Especias suaves"
+        ]
+      },
+      {
+        "name": "Sopa de zanahorias y calabacines",
+        "ingredients": [
+          "Zanahorias",
+          "Calabacines",
+          "Caldo de pollo bajo en sal",
+          "Aceite de oliva",
+          "Jengibre"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Tacos de pescado con col y salsa sin gluten",
-      "Galletas de avena sin gluten y plátano",
-      "Salmón al horno con zanahorias y calabacines"
+      {
+        "name": "Tacos de pescado con col y salsa sin gluten",
+        "ingredients": [
+          "Filete de pescado blanco",
+          "Col morada",
+          "Tortillas de maíz",
+          "Cilantro",
+          "Salsa sin gluten"
+        ]
+      },
+      {
+        "name": "Galletas de avena sin gluten y plátano",
+        "ingredients": [
+          "Avena sin gluten",
+          "Plátano",
+          "Miel",
+          "Chispas de chocolate negro"
+        ]
+      },
+      {
+        "name": "Salmón al horno con zanahorias y calabacines",
+        "ingredients": [
+          "Salmón",
+          "Zanahorias",
+          "Calabacines",
+          "Aceite de oliva",
+          "Limón"
+        ]
+      }
     ]
   },
   {
@@ -199,14 +699,68 @@
     ],
     "imageUrl": "./images/aproteina.jpg",
     "genericRecipes": [
-      "Ensalada de pollo con aguacate y tomate",
-      "Tazón de quinoa con garbanzos y espinacas",
-      "Tacos de carne magra con ensalada"
+      {
+        "name": "Ensalada de pollo con aguacate y tomate",
+        "ingredients": [
+          "Pechuga de pollo",
+          "Aguacate",
+          "Tomate",
+          "Aceite de oliva",
+          "Sal y pimienta"
+        ]
+      },
+      {
+        "name": "Tazón de quinoa con garbanzos y espinacas",
+        "ingredients": [
+          "Quinoa",
+          "Garbanzos",
+          "Espinacas",
+          "Aceite de oliva",
+          "Limón"
+        ]
+      },
+      {
+        "name": "Tacos de carne magra con ensalada",
+        "ingredients": [
+          "Carne molida magra",
+          "Tortillas integrales",
+          "Lechuga",
+          "Salsa de tomate",
+          "Aguacate"
+        ]
+      }
     ],
     "premiumRecipes": [
-      "Salmón a la parrilla con ensalada de quinoa",
-      "Pollo a la plancha con salsa de mostaza y espárragos",
-      "Tostadas de aguacate con huevo y espinacas"
+      {
+        "name": "Salmón a la parrilla con ensalada de quinoa",
+        "ingredients": [
+          "Salmón",
+          "Quinoa",
+          "Tomate cherry",
+          "Espinacas",
+          "Aceite de oliva"
+        ]
+      },
+      {
+        "name": "Pollo a la plancha con salsa de mostaza y espárragos",
+        "ingredients": [
+          "Pechuga de pollo",
+          "Espárragos",
+          "Mostaza Dijon",
+          "Miel",
+          "Aceite de oliva"
+        ]
+      },
+      {
+        "name": "Tostadas de aguacate con huevo y espinacas",
+        "ingredients": [
+          "Pan integral",
+          "Aguacate",
+          "Huevo",
+          "Espinacas",
+          "Aceite de oliva"
+        ]
+      }
     ]
   }
 ]
